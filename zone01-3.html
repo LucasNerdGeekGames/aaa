@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The City of Machines</title>
+    <link rel="stylesheet" href="style - Copia.css">
+</head>
+
+<body>
+
+    <div id="aqui" class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+          
+          <div class="w3-right w3-hide-small">
+            <!--<img style="width:20px; height:20px;" src="Gold icon.png">-->
+            <script>
+                if(typeof(Storage)!="undefined"){
+                    if(localStorage.gold, localStorage.damage){
+                
+                }else{
+                    localStorage.setItem("gold",0);
+                    localStorage.setItem("damage",2);
+                }
+                //document.write("Gold    :" +localStorage.gold);
+                document.write("Damage : " +localStorage.damage);
+            }else{
+                document.write("Sem suporte navegador.")
+            }
+            </script>
+            
+
+          </div>
+        </div>
+      </div>
+
+    <canvas id="canvas1"></canvas>
+    
+    <a href="D:\Trabalho\2 make game\cenario\html\game 02\fases\3 parte seleção tela\escolhe-fase.html"></a>
+    
+
+    <img id="layer10" src="fase 01.png">
+
+    <img id="player" src="Hero-base-flying-girl1.png">
+
+    <img id="enemy" src="Enemy-01.png">
+
+    <img id="shot" src="shot.png">  
+
+    <img id="botao01" src="botao01.png"></a>
+
+    <img id="uibarra" src="UIbarra.png"></a>
+
+
+    <!--<img id="gameOver" src="Enemy-01.png">--->
+    <style>
+        #gameOver {
+            position:absolute;
+            top    : 230px;
+            left   : 535px;
+            width  : 300px;
+            height : 200px;
+        }
+    </style>
+
+    
+    <style>
+        #chat {
+            position:absolute;
+            top    : 450px;
+            left   : 565px;
+            width  : 100px;
+            height : 100px;
+        }
+    </style>
+
+    <style>
+        #aqui {
+            position:absolute;
+            color: white;
+            top    : 580px;
+            left   : 345px;
+            width  : 150px;
+            height : 20px;
+        }
+    </style>
+
+    
+
+<img id="smartphone" src="smartphone.png"></a>
+
+<a href="index2.html"><button id="text">Zone 01</p></button></a>
+<a href="index.html"><button id="text2">Exit Menu</button></a>
+
+<button id="openinventory" onclick="Show()">Smart Phone</button>
+<button id="closeinventory" onclick="Hide()">Close Smart Phone</button>
+
+
+<a href="zone01-boss.html"><button id="next1">Next Level</button></a>
+
+<a href="zone01-3.html"><button id="again">Again</button></a>
+
+
+<!-- imagem barra de life-->
+
+
+<!-- image background 
+<img id="backgroundImage" src="map02.png">
+-->
+
+<style>
+    #text {
+        position:absolute;
+        top    : 510px;
+        left   : 1070px;
+        width  : 260px;
+        height : 30px;
+    }
+</style>
+
+<style>
+    #text2 {
+        position:absolute;
+        top    : 540px;
+        left   : 1070px;
+        width  : 260px;
+        height : 30px;
+    }
+</style>
+
+<style>
+    #openinventory {
+        position:absolute;
+        top    : 15px;
+        left   : 1270px;
+        width  : 80px;
+        height : 40px;
+    }
+</style>
+
+<style>
+    #closeinventory {
+        position:absolute;
+        top    : 570px;
+        left   : 1070px;
+        width  : 260px;
+        height : 30px;
+    }
+</style>
+
+<style>
+#smartphone {
+    position:absolute;
+    top    : 110px;
+    left   : 1050px;
+    width  : 300px;
+    height : 500px;
+}
+</style>
+
+<style>
+    #botao01 {
+        position:absolute;
+        top    : 510px;
+        left   : 17px;
+        width  : 300px;
+        height : 100px;
+    }
+</style>
+
+<style>
+    #Godowntown2 {
+        position:absolute;
+        top    : 210px;
+        left   : 1270px;
+        width  : 80px;
+        height : 50px;
+    }
+</style>
+
+<style>
+    #skin01 {
+        position:absolute;
+        top    : 550px;
+        left   : 885px;
+        width  : 80px;
+        height : 50px;
+    }
+</style>
+
+<style>
+    #skin02 {
+        position:absolute;
+        top    : 550px;
+        left   : 965px;
+        width  : 80px;
+        height : 50px;
+    }
+</style>
+
+<style>
+    #test {
+        position:absolute;
+        top    : 335px;
+        left   : 950px;
+        width  : 80px;
+        height : 50px;
+    }
+</style>
+
+<style>
+    #uibarra {
+        position:absolute;
+        top    : 560px;
+        left   : 320px;
+        width  : 180px;
+        height : 50px;
+    }
+</style>
+
+<style>
+    #next1 {
+        position:absolute;
+        top    : 300px;
+        left   : 595px;
+        width  : 180px;
+        height : 40px;
+    }
+</style>
+
+<style>
+    #again {
+        position:absolute;
+        top    : 350px;
+        left   : 595px;
+        width  : 180px;
+        height : 40px;
+    }
+</style>
+
+
+
+<script>
+    document.getElementById("text").hidden = true;
+    document.getElementById("text2").hidden = true;
+    document.getElementById("closeinventory").hidden = true;
+    document.getElementById('smartphone').hidden = true;
+    document.getElementById('next1').hidden = true;
+    document.getElementById('again').hidden = true;
+    
+    //document.getElementById('skin01').hidden = true;
+    //document.getElementById('skin02').hidden = true;
+    
+                                             //false;
+
+    //if (document.getElementById('skin01').hidden = 1) {
+    // coins // merchant // itens
+    // need part of item // sell for coins
+    // document.getElementById('skin01').hidden = true;
+    //}
+
+    
+    // if select db item 
+    function changeImage(fileName) {
+        let img = document.querySelector("#playerImage");
+        img.setAttribute("src", fileName);
+    }
+
+    
+    
+    function Hide() {
+        document.getElementById("text").hidden = true;
+        document.getElementById("text2").hidden = true;
+        document.getElementById("closeinventory").hidden = true;
+        document.getElementById("smartphone").hidden = true;
+        document.getElementById('skin01').hidden = true;
+        document.getElementById('skin02').hidden = true;
+        
+    }
+    
+    
+    function Show() {
+        document.getElementById("text").hidden = false;
+        document.getElementById("text2").hidden = false;
+        document.getElementById("closeinventory").hidden = false;
+        document.getElementById("smartphone").hidden = false;
+        document.getElementById('skin01').hidden = false;
+        document.getElementById('skin02').hidden = false;
+        
+    }
+    
+    
+   
+    
+</script>
+
+
+    <script src="zone01-3.js"></script>
+    
+</body>
+</html>
