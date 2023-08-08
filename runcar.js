@@ -348,6 +348,10 @@ window.addEventListener('load', function(){
                     message1 = 'You lose!';
                     message2 = 'Try again next time!';
                     document.getElementById('next1').hidden = false;
+                    document.getElementById('username').hidden = false;
+                    document.getElementById('message').hidden = false;
+
+
                     //window.location.href="index2.html";
                 }
                 context.font = '50px ' + this.fontFamily;
@@ -402,7 +406,7 @@ window.addEventListener('load', function(){
             this.winningScore = 5;
             this.gameTime = 0;
             this.gameTime2 = 0;
-            this.timeLimit = 60000;
+            this.timeLimit = 1000;
             this.timeLimit2 = 5000000;
         }
         update(deltaTime){
