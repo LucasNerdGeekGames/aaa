@@ -98,10 +98,7 @@
 
 
 
-<img id="backgroundImage" src="Map Base Shop 2.png"></a>
-
-
-<img id="car-02" src="car-01.png"></a>
+<img id="backgroundImage" src="Map Base Shop.png"></a>
 
 
 
@@ -112,25 +109,21 @@
 
 
 <!---<a href=""></a>-->
-<img id="botao01" src="botao00.png"></a>
+<img id="botao01" src="botao00f.png"></a>
 
 
 <img id="smartphone" src="smartphone.png"></a>
 
-<a href="map.html"><button id="text">Map</p></button></a>
+<a href="map2.html"><button id="text">Map</p></button></a>
 <a href="index.html"><button id="text2">Exit Menu</button></a>
-
-
-<a href="runcar.html"><button id="maisdamage">Try Race</button></a>
 
 <button id="openinventory" onclick="Show()">Smart Phone</button>
 <button id="closeinventory" onclick="Hide()">Close Smart Phone</button>
 
+<button id="maisdamage" onclick="damages()">Buy Upgrade Damage Cost : 200 Golds</button>
 
-<!--<button id="maisdamage" onclick="damages()">Buy Car Green Cost : 200 Golds</button>-->
 
-
-<p id="sobredano">Os 10 primeiros jogadores da lista, até dia 30 do mês, ganharão 1 cryptoracer.</button></p>
+<p id="sobredano">...200 Golds Upgrade Price...</button></p>
 
 
 <img id="barra01" src="UIbarra.png"></a>
@@ -147,19 +140,35 @@
 <div id="messages" class="messages"></div>
 <input placeholder="Enter your message here !" id="message" class="message" />
 
-
+<style>
+    #username {
+        position:absolute;
+        top    : 120px;
+        left   : 1061px;
+        width  : 270px;
+        height : 30px;
+    }
+</style>
 <style>
     #messages {
         position:absolute;
         top    : 157px;
-        left   : 620px;
-        width  : 380px;
-        height : 330px;
+        left   : 1061px;
+        width  : 278px;
+        height : 318px;
         overflow-y: scroll;
         background: #f4f4f4;
     }
 </style>
-
+<style>
+    #message {
+        position:absolute;
+        top    : 475px;
+        left   : 1060px;
+        width  : 272px;
+        height : 28px;
+    }
+</style>
 
 <script type="module">
     // Import the functions you need from the SDKs you need
@@ -169,12 +178,13 @@
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyBadmind0aeQv-n2GQnApTSeuMY52ssfDg",
-    authDomain: "text-chat-2.firebaseapp.com",
-    projectId: "text-chat-2",
-    storageBucket: "text-chat-2.appspot.com",
-    messagingSenderId: "226214988005",
-    appId: "1:226214988005:web:2f08932a27614cce83ec0c"
+    apiKey: "AIzaSyAhbMydJAQs1VNJbOqf3k34Z_SXoSOGi_c",
+    authDomain: "aaaaa-9d8b1.firebaseapp.com",
+    databaseURL: "https://aaaaa-9d8b1-default-rtdb.firebaseio.com",
+    projectId: "aaaaa-9d8b1",
+    storageBucket: "aaaaa-9d8b1.appspot.com",
+    messagingSenderId: "487415045792",
+    appId: "1:487415045792:web:7f89a98aa6d056a048b3c5"
     };
     
     firebase.initializeApp(firebaseConfig);
@@ -233,12 +243,6 @@
     })
 
 </script>
-
-
-
-
-
-
 
 <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/111336259290475740974333067570432470215354767842559083494316747679260580259600" target="_blank"><img id="nft" src="nftbutton.png"></a>
 <a href="https://play.google.com/store/apps/details?id=com.AdventureShooter.adventureshooter_cybers" target="_blank"><img id="android" src="androidbutton.png"></a>
@@ -452,9 +456,9 @@
 <style>
     #maisdamage {
         position:absolute;
-        top    : 300px;
-        left   : 450px;
-        width  : 130px;
+        top    : 140px;
+        left   : 630px;
+        width  : 160px;
         height : 35px;
     }
 </style>
@@ -496,22 +500,10 @@
     #sobredano {
         position:absolute;
         background-color: white;
-        top    : 100px;
-        left   : 458px;
-        width  : 500px;
-        height : 20px;
-    }
-</style>
-
-<!--    Cars           -->
-
-<style>
-    #car-02 {
-        position:absolute;
-        top    : 365px;
-        left   : 430px;
-        width  : 180px;
-        height : 60px;
+        top    : 265px;
+        left   : 615px;
+        width  : 187px;
+        height : 18px;
     }
 </style>
 
@@ -536,7 +528,7 @@
 
     document.getElementById("username").hidden = true;
     document.getElementById("message").hidden = true;
-    
+    document.getElementById("messages").hidden = true;
 
 
     //document.getElementById("quest2").hidden = true;
@@ -568,8 +560,9 @@
         document.getElementById("smartphone").hidden = true;
 
 
-        
-        
+        document.getElementById("username").hidden = true;
+        document.getElementById("message").hidden = true;
+        document.getElementById("messages").hidden = true;
 
         
         document.getElementById('skin01').hidden = true;
@@ -586,7 +579,8 @@
 
 
 
-        
+        document.getElementById("username").hidden = false;
+        document.getElementById("message").hidden = false;
         document.getElementById("messages").hidden = false;
 
 
@@ -654,7 +648,7 @@
 
 
 
-<script src="shop2.js"></script>
+<script src="shop.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
