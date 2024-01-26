@@ -146,6 +146,26 @@
 <button id="signInButton">Create Account / Log - In</button>
 <button id="signOutButton">Sign Out</button>
 
+<style>
+    #signInButton {
+        position:absolute;
+        top    : 220px;
+        left   : 80px;
+        width  : 270px;
+        height : 30px;
+    }
+</style>
+<style>
+    #signOutButton {
+        position:absolute;
+        top    : 255px;
+        left   : 80px;
+        width  : 270px;
+        height : 30px;
+        background: #f4f4f4;
+    }
+</style>
+
 
 
 
@@ -279,7 +299,8 @@
     onAuthStateChanged(auth, (user) => {
         if(user) {
             alert("You have signed in !")
-            
+             
+          
 
         } else {
 
@@ -675,12 +696,12 @@
 </script>
    
 
-    
-
-
-
-
 <script src="index2.js"></script>
+
+
+
+
+
 
 
 
