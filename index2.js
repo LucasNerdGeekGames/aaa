@@ -3,8 +3,8 @@
 window.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    canvas.width = 1350;
-    canvas.height = 600;
+    canvas.width = 1280;
+    canvas.height = 590;
 
 //socket.on("hello", () => {
     class InputHandler {
