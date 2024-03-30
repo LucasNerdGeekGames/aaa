@@ -1,0 +1,53 @@
+body {
+    background: rgb(0, 0, 0);
+}
+
+#canvas1 {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 5px solid white;
+}
+
+#backgroundImage2 {
+    display: none;
+}
+
+#gameOver {
+    transition-duration: 0.4;
+}
+#gameOver:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#player {
+    display: none;
+}
+
+#enemy {
+    display: none;
+}
+
+#enemy2 {
+    display: none;
+}
+
+#layer1 {
+    display: none;
+}
+
+#shot {
+    display: none;
+}
+
+#npc1 {
+    display: none;
+}
+
+#boss2 {
+    display: none;
+}
