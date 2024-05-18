@@ -52,9 +52,3 @@ window.addEventListener('load', function(){
 });
 
 
-// 13:28
-
-// back 01:53
-
-
-// full 05:10:08 - javascript game development course for beginners
