@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
             this.image = document.getElementById('backgroundImage2');
             this.x = 0;
             this.y = 0;
-            this.width = 1350;
+            this.width = 1450;
             this.height = 585;
             this.speed = 1;
         }
